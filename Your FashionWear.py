@@ -7,8 +7,8 @@
 import tensorflow as tf
 from tensorflow import keras
 
-tf.__version__
-keras.__version__
+print(tf.__version__)
+print(keras.__version__)
 
 
 # In[67]:
@@ -139,6 +139,7 @@ model.fit(X_train , Y_train , epochs=30 ,validation_data=(X_valid,Y_valid))
 # finding final accuracy of modell using test data
 
 model.evaluate(X_test , Y_test)
+print(f"The accuarcy of this ANN formed from MLP is {(val[1]*100).round(2)}%.")
 
 
 # In[88]:
